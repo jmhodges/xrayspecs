@@ -9,4 +9,7 @@ class Project(info: ProjectInfo) extends StandardProject(info) {
   val configgy = "net.lag" % "configgy" % "2.0.0"
 
   override def disableCrossPaths = false
+
+  Credentials(Path.userHome / ".ivy2" / "credentials", log)
+  val publishTo = "nexus" at "http://nexus.scala-tools.org/content/repositories/releases/"
 }
