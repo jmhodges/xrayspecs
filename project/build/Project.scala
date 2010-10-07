@@ -7,4 +7,6 @@ class Project(info: ProjectInfo) extends StandardProject(info) {
   val vscaladoc = "org.scala-tools" % "vscaladoc" % "1.1-md-3"
   val twitterJson = "com.twitter" %% "json" % "2.1.4"
   val configgy = "net.lag" % "configgy" % "2.0.0"
+
+  override def disableCrossPaths = false
 }
