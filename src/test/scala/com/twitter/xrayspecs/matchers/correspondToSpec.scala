@@ -1,4 +1,4 @@
-package com.twitter.xrayspecs
+package com.twitter.xrayspecs.matchers
 
 import com.twitter.xrayspecs.TimeConversions._
 import org.specs.mock.{ClassMocker, JMocker}

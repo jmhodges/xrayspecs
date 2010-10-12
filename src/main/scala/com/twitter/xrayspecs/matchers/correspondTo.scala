@@ -1,4 +1,4 @@
-package com.twitter.xrayspecs
+package com.twitter.xrayspecs.matchers
 
 import org.specs.matcher.Matcher
 
