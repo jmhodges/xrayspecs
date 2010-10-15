@@ -16,10 +16,9 @@
 
 package com.twitter.xrayspecs
 
-import _root_.java.io.File
-import _root_.java.util.UUID
-import _root_.org.specs.Specification
-
+import java.io.File
+import java.util.UUID
+import org.specs.Specification
 
 trait TemporaryFolder { self: Specification =>
   private val _folderName = new ThreadLocal[File]
@@ -30,7 +29,7 @@ trait TemporaryFolder { self: Specification =>
   private def deleteFolder(folder: File): Unit = {
     val files = folder.listFiles
     if (files != null) {
-      for (val f <- files) {
+      for (f <- files) {
         if (f.isDirectory) {
           deleteFolder(f)
         } else {

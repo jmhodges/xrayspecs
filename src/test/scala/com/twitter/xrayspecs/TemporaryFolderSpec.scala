@@ -17,9 +17,7 @@
 package com.twitter.xrayspecs
 
 import java.io.File
-import org.specs.mock.{ClassMocker, JMocker}
 import org.specs.Specification
-import TimeConversions._
 
 object TemporaryFolderSpec extends Specification with TemporaryFolder {
   "TemporaryFolder" should {
